@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Survey Form</title>
+
+</head>
+
+<body>
+  <main id="main">
+    <div></div>
+
+    <div class="container">
+      <header class="header">
+      <h1 id="title" class="text-center"> Readers form. </h1>
+      <p id="description" class="description-text-center"> Welcome, our library wants to know more about you! </p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Name..." required />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Email..." required />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="name">Age</label>
+          <input type="number" name="number" id="number" class="form-control" placeholder="Age... (number) "/>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What is your job role?
+          </p>
+          <select id="dropdown" name="question1" class="form-control" required>
+            <option disabled selected value> Select a job role </option>
+            <option value="option1"> Student </option>
+            <option value="option2"> Entrepreneur </option>
+            <option value="option3"> Office worker </option>
+            <option value="option4"> Manufacturing </option>
+            <option value="other"> Other </option>
+          </select>
+        </div>
+
+        <!-- <div class="form-group">
+          <p>
+            Question 2
+          </p>
+          <select id="dropdown" name="question1" class="form-control" required>
+            <option disabled selected value> Select answer Q1 </option>
+            <option value="optiona"> optiona </option>
+            <option value="optionb"> optionb </option>
+            <option value="optionc"> optionc </option>
+            <option value="optiond"> optiond </option>
+            <option value="other1"> other1 </option>
+          </select>
+        </div> -->
+
+        <div class="form-group">
+          <p>
+            Would you recommend us to your family or friends?
+          </p>
+          <label> <input  name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+          <label> <input  name="user-recommend" value="maybe" type="radio" class="input-radio" checked />Maybe</label>
+          <label> <input  name="user-recommend" value="not-sure" type="radio" class="input-radio" checked />Not-sure</label> 
+        </div>
+
+        <div class="form-group">
+          <p>
+            What is the genre that you read the most?
+          </p>
+          <select id="most-like" name="question2" class="form-control" required>
+            <option disabled selected value> Select a genre </option>
+            <option value="optiona"> Romance </option>
+            <option value="optionb"> Drama </option>
+            <option value="optionc"> Horror </option>
+            <option value="optiond"> Sci-fi </option>
+            <option value="other1"> Other </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you improve in our library? <span class="clue">Select all that apply</span>
+          </p>
+          
+          <label> <input  name="prefer" value="proyecto1" type="checkbox" class="input-checkbox" />Monthly discount in books</label>
+          <label> <input  name="prefer" value="proyecto2" type="checkbox" class="input-checkbox" />Free coffee after 9 p.m.</label>
+          <label> <input  name="prefer" value="proyecto3" type="checkbox" class="input-checkbox" />Events (book signing, reading group, cultural events)</label>
+        </div>
+
+        <div class="form-group">
+          <p>
+            If you have any comments or suggestions, please write them below <span class="clue"></span>
+          </p>
+          <textarea id="comments" name="comment" class="input-textarea" placeholder="Comments..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button id="submit" type="submit" class="submit-button"> Submit</button>
+        </div>
+
+      </form>
+
+
+    </div>
+
+
+    <script> src = "./script/script.js" </script>
+  </main>
+
+
+  <footer align="center">
+    <h5>Jelitza Varón Heredia </h5>
+    <h5>2021</h5>
+  </footer> 
+
+</body>
